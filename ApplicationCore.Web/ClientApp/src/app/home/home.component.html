@@ -1,0 +1,10 @@
+<h1>Products</h1>
+
+<p *ngIf="!products"><em>Loading...</em></p>
+<pre *ngFor="let product of products">
+  {{product | json}}
+</pre>
+
+<span *ngFor="let prod of products">
+  {{prod.name}}
+</span>
